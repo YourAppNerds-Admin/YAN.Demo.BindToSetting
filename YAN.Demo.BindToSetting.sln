@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.30225.117
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "YAN.Demo.BindToSetting", "YAN.Demo.BindToSetting\YAN.Demo.BindToSetting.csproj", "{30EB630D-F54F-491F-8EF1-9EBDE9E8F610}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{30EB630D-F54F-491F-8EF1-9EBDE9E8F610}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{30EB630D-F54F-491F-8EF1-9EBDE9E8F610}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{30EB630D-F54F-491F-8EF1-9EBDE9E8F610}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{30EB630D-F54F-491F-8EF1-9EBDE9E8F610}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {D2024E2C-7958-4B0E-8266-961A2953A18A}
+	EndGlobalSection
+EndGlobal

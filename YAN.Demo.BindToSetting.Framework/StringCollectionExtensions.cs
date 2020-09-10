@@ -2,7 +2,7 @@
 using System.Collections.ObjectModel;
 using System.Collections.Specialized;
 
-namespace YAN.Demo.BindToSetting
+namespace YAN.Demo.BindToSetting.Framework
 {
     public static class StringCollectionExtensions 
     {

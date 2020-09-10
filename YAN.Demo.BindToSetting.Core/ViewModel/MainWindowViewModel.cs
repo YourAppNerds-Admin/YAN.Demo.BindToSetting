@@ -6,7 +6,7 @@ using System.ComponentModel;
 using System.Runtime.CompilerServices;
 using System.Text;
 
-namespace YAN.Demo.BindToSetting.ViewModel
+namespace YAN.Demo.BindToSetting.Core.ViewModel
 {
     public class MainWindowViewModel : INotifyPropertyChanged
     {

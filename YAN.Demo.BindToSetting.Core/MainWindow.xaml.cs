@@ -12,9 +12,9 @@ using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
-using YAN.Demo.BindToSetting.ViewModel;
+using YAN.Demo.BindToSetting.Core.ViewModel;
 
-namespace YAN.Demo.BindToSetting
+namespace YAN.Demo.BindToSetting.Core
 {
     /// <summary>
     /// Interaction logic for MainWindow.xaml
@@ -24,6 +24,11 @@ namespace YAN.Demo.BindToSetting
         public MainWindow()
         {
             InitializeComponent();
+        }
+
+        protected override void OnContentRendered(EventArgs e)
+        {
+            base.OnContentRendered(e);
         }
 
         private void Button_Click(object sender, RoutedEventArgs e)

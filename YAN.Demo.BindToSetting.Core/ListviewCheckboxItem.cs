@@ -4,7 +4,7 @@ using System.ComponentModel;
 using System.Runtime.CompilerServices;
 using System.Text;
 
-namespace YAN.Demo.BindToSetting
+namespace YAN.Demo.BindToSetting.Core
 {
     public class ListviewCheckboxItem : INotifyPropertyChanged
     {

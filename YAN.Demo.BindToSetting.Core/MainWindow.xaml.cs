@@ -21,6 +21,7 @@ namespace YAN.Demo.BindToSetting.Core
     /// </summary>
     public partial class MainWindow : Window
     {
+        private MainWindowViewModel VM => (MainWindowViewModel)DataContext;
         public MainWindow()
         {
             InitializeComponent();
@@ -38,12 +39,14 @@ namespace YAN.Demo.BindToSetting.Core
 
         private void AddToStringCollectionSetting_Click(object sender, RoutedEventArgs e)
         {
-            ((MainWindowViewModel)DataContext).StringCollectionSetting.Add(DateTime.Now.ToString());
+            VM.StringCollectionSetting.Add(DateTime.Now.ToString());
+            //VM.OnPropertyChanged("StringCollectionSetting");
         }
 
         private void AddToStringCollectionToObjectSetting_Click(object sender, RoutedEventArgs e)
         {
-            ((MainWindowViewModel)DataContext).StringCollectionToObjectSetting.Add(new ListviewCheckboxItem(DateTime.Now.ToString(), true));
+            VM.StringCollectionToObjectSetting.Add(new ListviewCheckboxItem(DateTime.Now.ToString(), true));
+            //VM.OnPropertyChanged("StringCollectionToObjectSetting");
         }
     }
 }

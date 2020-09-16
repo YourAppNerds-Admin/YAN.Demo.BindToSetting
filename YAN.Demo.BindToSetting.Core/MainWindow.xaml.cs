@@ -36,17 +36,5 @@ namespace YAN.Demo.BindToSetting.Core
         {
 
         }
-
-        private void AddToStringCollectionSetting_Click(object sender, RoutedEventArgs e)
-        {
-            VM.StringCollectionSetting.Add(DateTime.Now.ToString());
-            //VM.OnPropertyChanged("StringCollectionSetting");
-        }
-
-        private void AddToStringCollectionToObjectSetting_Click(object sender, RoutedEventArgs e)
-        {
-            VM.StringCollectionToObjectSetting.Add(new ListviewCheckboxItem(DateTime.Now.ToString(), true));
-            //VM.OnPropertyChanged("StringCollectionToObjectSetting");
-        }
     }
 }

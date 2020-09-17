@@ -83,7 +83,7 @@ namespace YAN.Demo.BindToSetting.Core.ViewModel
 
         private void WhenStringCollectionToObjectSettingChanges(object sender, NotifyCollectionChangedEventArgs e)
         {
-            Settings.StringCollectionToObjectSetting = StringCollectionSetting.ToStringCollection();
+            Settings.StringCollectionToObjectSetting = StringCollectionToObjectSetting.ToStringCollection();
             Settings.Save();
         }
 

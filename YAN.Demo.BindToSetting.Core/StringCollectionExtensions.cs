@@ -31,7 +31,16 @@ namespace YAN.Demo.BindToSetting.Core
             ObservableCollection<ListviewCheckboxItem> Collection = new ObservableCollection<ListviewCheckboxItem>();
             for (int Index = 0; Index < Source.Count; Index += 2)
             {
-                Collection.Add(new ListviewCheckboxItem(Source[Index], Convert.ToBoolean(Source[Index + 1])));
+                try
+                {
+                    bool IsChecked = Convert.ToBoolean(Source[Index + 1]);
+                    Collection.Add(new ListviewCheckboxItem(Source[Index], Convert.ToBoolean(Source[Index + 1])));
+                }
+                catch
+                {
+                    Collection.Add(new ListviewCheckboxItem(Source[Index]));
+                    Index -= 1;
+                }                
             }
             return Collection;
         }
